@@ -213,3 +213,4 @@ def compare_blasius_solution():
 
 if __name__ == "__main__":
     compare_blasius_solution()
+    plt.show()

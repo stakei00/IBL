@@ -215,6 +215,6 @@ def compare_stagnation_solution():
                loc="upper center", bbox_to_anchor=(0.45, 0.03), ncol=3,
                borderaxespad=0.1)
 
-
 if __name__ == "__main__":
     compare_stagnation_solution()
+    plt.show()

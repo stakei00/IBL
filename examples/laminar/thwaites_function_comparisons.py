@@ -13,7 +13,10 @@ similar results to Figures 1.2 and 1.3 in Edland thesis.
 # pylint: disable=too-many-statements
 import numpy as np
 import matplotlib.pyplot as plt
+import os 
+import sys 
 
+sys.path.append(os.getcwd())
 from pyBL.thwaites_method import _ThwaitesFunctionsWhite
 from pyBL.thwaites_method import _ThwaitesFunctionsCebeciBradshaw
 from pyBL.thwaites_method import _ThwaitesFunctionsSpline
@@ -143,7 +146,6 @@ def compare_thwaites_fits():
     plt.grid(True)
     plt.legend()
     plt.show()
-
 
 if __name__ == "__main__":
     compare_thwaites_fits()
